@@ -2,6 +2,7 @@ from statistics import mode
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
+from sklearn import linear_model
 
 #Regresi[on lineal simple utilizando minimos cuadrados
 #Ecuacion de la regresión
@@ -89,8 +90,6 @@ predManual = predict(xtest)
 
 # Para comprobar que esta bien nuestro modelo lo compararemos contra el de la libreria de sklearn
 # contra su modelo de regresion lineal simple
-
-from sklearn import linear_model
 
 model = linear_model.LinearRegression()
 model.fit(xtrainSk,ytrainSk)
